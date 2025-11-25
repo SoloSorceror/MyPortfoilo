@@ -9,7 +9,7 @@ const Blog = () => {
             title: 'All CSE Essentials',
             excerpt: 'A comprehensive guide to all the essentials of Computer Science and Engineering.',
             date: '2024-11-15',
-            image: '/public/cseFun.jpg',
+            image: '/cseFun.jpg',
             readTime: '5 min read',
             tags: ['CSE', 'C++', 'OOP', 'DS', 'Algo'],
             link: 'https://hazel-night-5c9.notion.site/Computer-fundamentals-1f609c5d57b4804680f1ed494423f6c1'
@@ -19,7 +19,7 @@ const Blog = () => {
             title: 'Future of Doctor Consultation And Appointment Using LYRA AI',
             excerpt: 'Creating scalable and maintainable design systems that enhance team productivity and user experience.',
             date: '2024-11-08',
-            image: '/public/doc.jpg',
+            image: '/doc.jpg',
             readTime: '7 min read',
             tags: ['Design', 'UI/UX', 'Systems'],
             link: '#'
@@ -29,7 +29,7 @@ const Blog = () => {
             title: 'Master Data Structures with C++',
             excerpt: 'Practical techniques to improve your Data Structure skills.',
             date: '2024-10-28',
-            image: '/public/dss.jpg',
+            image: '/dss.jpg',
             readTime: '6 min read',
             tags: ['DSA', 'C++', 'Algorithms'],
             link: '#https://hazel-night-5c9.notion.site/Computer-fundamentals-1f609c5d57b4804680f1ed494423f6c1'
@@ -39,7 +39,7 @@ const Blog = () => {
             title: 'JavaScript Guide',
             excerpt: 'Looking ahead at upcoming JavaScript features and how they will shape the future of web development.',
             date: '2024-10-20',
-            image: '/public/javasC.jpg',
+            image: '/javasC.jpg',
             readTime: '8 min read',
             tags: ['JavaScript', 'Future', 'ES2024'],
             link: 'https://hazel-night-5c9.notion.site/JAVA-SCRIPT-1fc09c5d57b48009a537e97ea07975d2?pvs=73'

@@ -12,7 +12,7 @@ const SocialFeed = () => {
             date: '2025-10-30',
             likes: 42,
             comments: 8,
-            image: '/public/csir.jpg'
+            image: '/csir.jpg'
         },
         {
             id: 2,
@@ -22,7 +22,7 @@ const SocialFeed = () => {
             date: '2025-03-18',
             likes: 200,
             comments: 24,
-            image: '/public/hiking.jpg'
+            image: '/hiking.jpg'
         },
         {
             id: 3,
@@ -32,7 +32,7 @@ const SocialFeed = () => {
             date: '2024-10-15',
             likes: 89,
             comments: 15,
-            image: '/public/hackathon.jpg'
+            image: '/hackathon.jpg'
         },
         {
             id: 4,
@@ -42,7 +42,7 @@ const SocialFeed = () => {
             date: '2024-11-12',
             likes: 203,
             comments: 24,
-            image: '/public/food.jpg'
+            image: '/food.jpg'
         },
         {
             id: 5,
@@ -52,7 +52,7 @@ const SocialFeed = () => {
             date: '2025-11-26',
             likes: 178,
             comments: 19,
-            image: '/public/lyraAi.jpg'
+            image: '/lyraAi.jpg'
         }
     ];
 

@@ -16,7 +16,7 @@ const Projects = () => {
             title: 'Lyra Ai',
             description: 'A SaaS-integrated medical reception chatbot using a React UI and a custom NLP pipeline that extracts symptoms, generates symptom codes, and classifies patient issues with high accuracy, with LLM fallback for low- confidence cases',
             date: '2025-10-26',
-            image: '/public/LyraAi.jpg',
+            image: '/LyraAi.jpg',
             link: 'https://github.com/SoloSorceror/Lyra'
         },
         {
@@ -24,7 +24,7 @@ const Projects = () => {
             title: 'Weather Dashboard',
             description: 'Beautiful weather dashboard with real-time data, 7-day forecasts, and interactive maps. Built Using OpenWeather API.',
             date: '2024-11-10',
-            image: '/public/weather.jpg',
+            image: '/weather.jpg',
             link: 'https://github.com/SoloSorceror/weather-whisperer-bot-buddy'
         },
         {
@@ -32,7 +32,7 @@ const Projects = () => {
             title: 'My Portfolio',
             description: 'This is my portfolio website, You are currently on it!',
             date: '2025-11-26',
-            image: '/public/PortfolioMe.jpg',
+            image: '/PortfolioMe.jpg',
             link: '#'
         }
     ];
