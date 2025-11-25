@@ -1,0 +1,201 @@
+.social-feed-section {
+    background-color: var(--bg-primary);
+    border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.social-feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.social-feed-subtitle {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: var(--spacing-xs);
+}
+
+/* Social Feed Horizontal Scroll */
+.social-scroll-container {
+    position: relative;
+    margin-bottom: var(--spacing-sm);
+}
+
+.social-horizontal-scroll {
+    display: flex;
+    gap: var(--spacing-lg);
+    overflow-x: auto;
+    padding-bottom: var(--spacing-md);
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color) var(--bg-primary);
+}
+
+.social-horizontal-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.social-horizontal-scroll::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+}
+
+.social-horizontal-scroll::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border: 1px solid var(--bg-primary);
+}
+
+.social-horizontal-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
+
+.social-post-card {
+    min-width: 320px;
+    max-width: 320px;
+    flex-shrink: 0;
+    background-color: var(--bg-secondary);
+    border: var(--border-width) solid var(--border-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.social-post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 8px 8px 0 var(--border-color);
+}
+
+.social-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.platform-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.platform-badge svg {
+    color: var(--text-primary);
+}
+
+.platform-name {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+/* Platform-specific styling */
+.social-post-card.linkedin .platform-badge svg {
+    color: #0077b5;
+}
+
+.social-post-card.instagram .platform-badge svg {
+    color: #E4405F;
+}
+
+.post-date {
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+}
+
+.post-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-bottom: var(--border-width) solid var(--border-color);
+    background-color: var(--bg-primary);
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.3s ease;
+    filter: grayscale(50%);
+}
+
+.social-post-card:hover .post-image img {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.post-content {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    flex: 1;
+}
+
+.post-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.post-stats {
+    display: flex;
+    gap: var(--spacing-md);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--border-color);
+}
+
+.stat {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.scroll-hint {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    padding: var(--spacing-sm);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .social-post-card {
+        min-width: 280px;
+        max-width: 280px;
+    }
+
+    .post-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 560px) {
+    .social-post-card {
+        min-width: 260px;
+        max-width: 260px;
+    }
+
+    .post-image {
+        height: 160px;
+    }
+}

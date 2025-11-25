@@ -1,0 +1,294 @@
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    border-bottom: var(--border-width) solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: repeating-linear-gradient(90deg,
+            transparent,
+            transparent 49px,
+            var(--border-color) 49px,
+            var(--border-color) 50px);
+    opacity: 0.1;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1;
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-subtitle {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-secondary);
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.btn-arrow {
+    transition: transform 0.3s ease;
+}
+
+.btn:hover .btn-arrow {
+    transform: translateX(4px);
+}
+
+/* Retro Computer Illustration */
+.hero-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInRight 0.8s ease-out;
+}
+
+.retro-computer {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1;
+}
+
+.computer-screen {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    border: 3px solid var(--border-color);
+    border-radius: 20px;
+    background-color: var(--bg-primary);
+    box-shadow: inset 0 0 0 8px var(--bg-secondary);
+}
+
+.screen-content {
+    position: absolute;
+    inset: 15px;
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.screen-face {
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
+
+.eye {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: var(--border-color);
+    border-radius: 50%;
+    top: 30%;
+    animation: blink 4s infinite;
+}
+
+.eye-left {
+    left: 25%;
+}
+
+.eye-right {
+    right: 25%;
+}
+
+.smile {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 30px;
+    border: 3px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 50px 50px;
+}
+
+.screen-base {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 20px;
+    background-color: var(--bg-primary);
+    border: 2px solid var(--border-color);
+}
+
+.pen-holder {
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-15deg);
+}
+
+.pen {
+    width: 40px;
+    height: 150px;
+    background-color: var(--bg-primary);
+    border: 3px solid var(--border-color);
+    border-radius: 5px 5px 0 0;
+    position: relative;
+}
+
+.pen::before {
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 40px;
+    background-color: var(--border-color);
+    border-radius: 3px;
+}
+
+.pen-tip {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid var(--border-color);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bubble {
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    animation: float 3s ease-in-out infinite;
+}
+
+.bubble-1 {
+    width: 15px;
+    height: 15px;
+    top: -30px;
+    right: -20px;
+    animation-delay: 0s;
+}
+
+.bubble-2 {
+    width: 10px;
+    height: 10px;
+    top: -50px;
+    right: -10px;
+    animation-delay: 0.5s;
+}
+
+.bubble-3 {
+    width: 8px;
+    height: 8px;
+    top: -65px;
+    right: 0;
+    animation-delay: 1s;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    90%,
+    100% {
+        transform: scaleY(1);
+    }
+
+    95% {
+        transform: scaleY(0.1);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .hero-illustration {
+        order: -1;
+    }
+
+    .retro-computer {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        min-height: 70vh;
+    }
+
+    .pen-holder {
+        display: none;
+    }
+}
