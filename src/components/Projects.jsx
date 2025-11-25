@@ -16,7 +16,7 @@ const Projects = () => {
             title: 'Lyra Ai',
             description: 'A SaaS-integrated medical reception chatbot using a React UI and a custom NLP pipeline that extracts symptoms, generates symptom codes, and classifies patient issues with high accuracy, with LLM fallback for low- confidence cases',
             date: '2025-10-26',
-            image: '/LyraAi.jpg',
+            image: '/lyraAi.jpg',
             link: 'https://github.com/SoloSorceror/Lyra'
         },
         {
